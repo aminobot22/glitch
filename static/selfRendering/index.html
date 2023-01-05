@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Self-Rendering -- Agora</title>
+  <link rel="stylesheet" href="../assets/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
+  <style>
+  
+    /* Add custom font */
+    
+    /* Add black background */
+    body {
+      background-color: black;
+    }
+
+    /* Add some spacing and layout */
+    .container-fluid {
+      padding: 20px;
+    }
+
+    .banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #222;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /* Use some design elements */
+    .banner a {
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: 5px;
+      transition: 0.2s ease-in-out;
+    }
+
+    .banner a:hover {
+      background-color: white;
+      color: #222;
+    }
+
+    .alert {
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .container{
+      
+    }
+
+    /* Use proper indentation and organization */
+    
+    video {
+  width: 100%; /* Adjust the width to change the size of the player */
+}
+#video_track-video-mirror {
+      width: 100%;
+      height: 100%;
+      object-fit: center;
+    }
+  </style>
+</head>
+
+<body>
+  
+
+
+  <body style="background-color:#10131a;">
+  <p style="margin-bottom: 49px; font-size: 28pt; color: white; font-family: Montserrat;">Live Streaming</p>
+
+
+  <br>
+     <br>
+  <div class="container">
+   <video id="video_track-video-mirror" controls> </video>
+    
+    </div>
+    <form>
+      <div class="form-group">
+        <button id="leave" type="button" class="btn btn-primary btn-sm">Leave</button>
+        <button id="mute-audio" type="button" class="btn btn-primary btn-sm">Mute/unmute</button>
+      </div>
+    </form>
+   
+    
+  <script src="../assets/jquery-3.4.1.min.js"></script>
+  <script src="../assets/bootstrap.bundle.min.js"></script>
+  <script src="../assets/AgoraRTC-N-4.2.1.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
+
