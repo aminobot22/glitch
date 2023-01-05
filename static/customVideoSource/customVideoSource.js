@@ -70,7 +70,7 @@ function copyString(string) {
 }
 $('#invite-button').click(function() {
     // get the invite URL
-    var copyText = 'https://stream.grimreaper01.repl.co/invite/'+channelType+'/channel='+channelName ;
+    var copyText = 'https://coffestream/invite/'+channelType+'/channel='+channelName ;
     copyString(copyText);
     alert("Url copied");
   });
